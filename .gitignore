@@ -8,11 +8,26 @@
 /.bundle
 
 # Ignore all logfiles and tempfiles.
-/log/*
-/tmp/*
+/log/
+/tmp/
 !/log/.keep
 !/tmp/.keep
 
+# Ignore uploaded files in development
+/storage/
+!/storage/.keep
+
+/node_modules
+/yarn-error.log
+
+/public/assets
 .byebug_history
 
-/coverage
+# Ignore master key for decrypting credentials and more.
+/config/master.key
+
+# Ignore other file.
+# /config/database.yml
+/db/schema.rb
+/test/
+Gemfile.lock
